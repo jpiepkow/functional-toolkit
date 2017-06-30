@@ -1,0 +1,12 @@
+var F = require('./index');
+console.log(F.fork(F.concat,() => [1,2,3], () => [4,5,6],1))
+console.log(F.hasLength([]))
+console.log(F.conditional(() => 'null',() => 'not null','flahef'))
+console.log(F.part([1,2,3,4,5,6,7],(item) => item % 2 === 0))
+console.log(F.pull({one:1,two:2},'two'))
+console.log(F.compare((one,two) => F.concat(one,two),[1,2,3],[4,5,6]))
+console.log(F.wrapper.of('jordan').map((r) => r.toUpperCase()).toString())
+console.log(F.maybe.fromNullable('jordan').getOrElse('not found :['))
+console.log(F.either.fromNullable(null))
+F.either.of('jordan').orElse((a) => {console.log(a)}).map(x => {console.log(x)})
+F.either.left('Error happened here!').orElse((a) => {console.log(a)})

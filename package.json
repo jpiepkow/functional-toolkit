@@ -1,0 +1,17 @@
+{
+  "name": "functional-toolkit",
+  "version": "1.0.3",
+  "description": "a toolkit of useful functional for functional programming.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "functional"
+  ],
+  "author": "jpiepkow",
+  "license": "ISC",
+  "dependencies": {
+    "ramda": "^0.24.1"
+  }
+}
